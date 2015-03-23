@@ -15,9 +15,15 @@ Usage
 ===
 
 ```
-git clone https://github.com/zhangxiaoyang/NetResolver
-cd NetResolver
-,/NetResolver.sh
+./nr_cli.sh -d [DOMAIN]
+./nr_cli.sh -i [IP]
+
+Example:
+./nr_cli.sh -d baidu.com
+./nr_cli.sh -i 180.149.132.47
 ```
 
-Note: `DOMAIN` or `IP` in `NetResolver.sh` can be modified.
+License
+===
+
+MIT
