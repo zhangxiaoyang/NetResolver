@@ -1,6 +1,4 @@
 #!/usr/bin/env bash
-source DomainResolver.sh
-source IPResolver.sh
 
 function resolve_domain()
 {

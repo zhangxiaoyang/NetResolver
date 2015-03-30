@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
 source lib/NetResolver.sh
+source lib/DomainResolver.sh
+source lib/IPResolver.sh
 
 function usage()
 {
