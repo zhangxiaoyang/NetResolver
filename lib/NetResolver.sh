@@ -28,6 +28,10 @@ function resolve_domain()
     DOMAIN_AS
     echo "$AS"
 
+    echo -e "\n== TTL =="
+    DOMAIN_TTL
+    echo "$TTL"
+
     echo -e "\n== WHOIS =="
     DOMAIN_WHOIS
     echo "$WHOIS"

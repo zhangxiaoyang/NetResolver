@@ -54,6 +54,14 @@ function DOMAIN_AS()
     | awk '{if(NR == 1 || !(index($0, "BGP Prefix"))) print $0;}'`
 }
 
+function DOMAIN_TTL()
+{
+    TTL=`dig "$DOMAIN"\
+    | grep -A 1 "ANSWER SECTION:"\
+    | grep -v "ANSWER SECTION:"\
+    | awk '{print $2;}'`
+}
+
 function DOMAIN_WHOIS()
 {
     WHOIS=`whois $DOMAIN`
