@@ -28,7 +28,7 @@ function DOMAIN_TXT()
 
 function DOMAIN_A()
 {
-    A=`nslookup -q=a baidu.com\
+    A=`nslookup -q=a "$DOMAINA"\
     | grep -A "$MAX_LEN" "Non-authoritative answer"\
     | grep -v "Non-authoritative answer"\
     | grep -v "Name:" | sed 's/Address: //'`
