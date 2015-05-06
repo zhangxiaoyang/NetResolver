@@ -7,8 +7,8 @@ source lib/IPResolver.sh
 function usage()
 {
     echo "Usage:"
-    echo "  ./NetResolver.sh -d baidu.com"
-    echo "  ./NetResolver.sh -i 180.149.132.47"
+    echo "  ./nr_cli.sh -d baidu.com"
+    echo "  ./nr_cli.sh -i 180.149.132.47"
     echo ""
 }
 
